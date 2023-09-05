@@ -1,0 +1,10 @@
+/* Here is your custom css styles. */
+Css
+@font-face{
+    font-family: 'kai';
+    src: url('../font/kai.ttf');
+}
+
+body{
+    font-family: 'kai';
+}
