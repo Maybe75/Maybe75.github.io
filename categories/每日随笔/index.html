@@ -13,72 +13,28 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
     <title>分类: 每日随笔 | 银河咖啡馆</title>
     <link rel="icon" type="image/png" href="/favicon.png">
-    
 
-
-    <!-- bg-cover style     -->
-
-
-
-<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-<link rel="stylesheet" type="text/css" href="/css/matery.css">
-<link rel="stylesheet" type="text/css" href="/css/my.css">
-<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
-
-
-
-
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-    <link rel="stylesheet" href="/css/post.css">
-
-
-
-
-    
-
-
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/css/loading.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 
-<meta name="generator" content="Hexo 6.3.0"></head>
 
 
 <body>
-    
-  <div id="loading-box">
-    <div class="loading-left-bg"></div>
-    <div class="loading-right-bg"></div>
-    <div class="spinner-box">
-      <div class="configure-border-1">
-        <div class="configure-core"></div>
-      </div>
-      <div class="configure-border-2">
-        <div class="configure-core"></div>
-      </div>
-      <div class="loading-word">加载中...</div>
-    </div>
-  </div>
-  <!-- 页面加载动画 -->
-  <script>
-    $(document).ready(function () {
-      document.body.style.overflow = 'auto';
-      document.getElementById('loading-box').classList.add("loaded")
-    })
-  </script>
-
-
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -174,7 +130,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="" class="waves-effect waves-light">
+    <a href="javascript:;" class="waves-effect waves-light">
 
       
       <i class="fas fa-list" style="zoom: 0.6;"></i>
@@ -211,11 +167,6 @@
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
-  <li>
-    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
-      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
-    </a>
-  </li>
 </ul>
 
 
@@ -232,6 +183,8 @@
             
         </div>
     </div>
+
+    
 
     <ul class="menu-list mobile-menu-list">
         
@@ -436,16 +389,10 @@
             <div class="description center-align">
                 
                 <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "不要温和的走进那个良夜",
-                            
-                                "怒斥吧，怒斥光的消逝。",
-                            
-                        ],
+                        strings: ['怒斥吧，怒斥光的消逝',''],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -461,9 +408,10 @@
 
 
 <script>
-    $('.bg-cover').css('background-image', 'url(https://pic.imgdb.cn/item/636d21af16f2c2beb1c8c8da.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.webp';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
-
 
 
     </div>
@@ -492,19 +440,28 @@
                 </a>
                 
                 
-                <a href="/categories/%E8%A7%82%E5%90%8E%E6%84%9F/" title="观后感: 2">
+                <a href="/categories/%E7%97%85%E6%84%88%E9%9A%8F%E7%AC%94/" title="病愈随笔: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">观后感
+                            style="background-color: #F5EEF8;">病愈随笔
                         <span class="tag-length">2</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E7%97%85%E6%84%88%E9%9A%8F%E7%AC%94/" title="病愈随笔: 2">
+                <a href="/categories/%E6%97%A5%E5%B8%B8/" title="日常: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">病愈随笔
+                            style="background-color: #D5F5E3;">日常
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E8%A7%82%E5%90%8E%E6%84%9F/" title="观后感: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #E8F8F5;">观后感
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -513,7 +470,7 @@
                 <a href="/categories/%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/" title="聊天记录: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #E8F8F5;">聊天记录
+                            style="background-color: #FEF9E7;">聊天记录
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -522,7 +479,7 @@
                 <a href="/categories/%E6%91%98%E6%8A%84/" title="摘抄: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #FEF9E7;">摘抄
+                            style="background-color: #F8F9F9;">摘抄
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -544,7 +501,8 @@
                     <a href="/2024/01/12/d2/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/65a4c7e7871b83018a2363a2.jpg" class="responsive-img" alt="写在归乡">
+                            
+                            <img src="/medias/featureimages/14.webp" class="responsive-img" alt="写在归乡">
                             
                             <span class="card-title">写在归乡</span>
                         </div>
@@ -552,7 +510,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                回家了。
+                                走时已是傍晚。渐变的散漫着的晚霞挂上了这片澄净的天空。落日溶了金子般垂垂然落了下去，四溢开来无边的冬色。余霞散成绮丝，虽然没有澄江安静的绸缎作为陪衬，但看不见的不远处有潮起潮落的大海温和的融入进夕阳。该回家了。萧瑟的树枝轻轻的摇晃着，凌厉的
                             
                         </div>
                         <div class="publish-info">
@@ -589,7 +547,8 @@
                     <a href="/2023/12/19/d1/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/65a4c66b871b83018a1eb4a1.jpg" class="responsive-img" alt="写在初雪">
+                            
+                            <img src="/medias/featureimages/4.webp" class="responsive-img" alt="写在初雪">
                             
                             <span class="card-title">写在初雪</span>
                         </div>
@@ -597,7 +556,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                在北方的第一个初雪。
+                                北国的雪来的比想象中还要突然些，伴随着依旧凛冽的寒风，在无人问津的夜晚悄然降临了下来。对于这个少女般的小城，我大抵是受得够够的了，也自然明白她的喜怒无常。只是无论她怎么努力，寒风依旧吹不进春意盎然的屋子里，只得悻悻然在屋外落着一片片的冰晶。
                             
                         </div>
                         <div class="publish-info">
@@ -634,7 +593,8 @@
                     <a href="/2023/09/05/thinkingo/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/64f71241661c6c8e54b27eaf.jpg" class="responsive-img" alt="每日随笔——从《海边的曼彻斯特》看存在主义 part1">
+                            
+                            <img src="/medias/featureimages/16.webp" class="responsive-img" alt="每日随笔——从《海边的曼彻斯特》看存在主义 part1">
                             
                             <span class="card-title">每日随笔——从《海边的曼彻斯特》看存在主义 part1</span>
                         </div>
@@ -642,7 +602,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Part1是影评。
+                                “在事情发生的那一刻，他已经死了。”
+影片开头，是灰色的夜晚。
+一个男人在一个大楼里干着最底端的工作，他的身上仿佛笼罩了一层雾，把他清晰的与世界本身的颜色割裂开——只剩下纯粹的灰色。
+他不计报酬，无所谓前景，时而心不在焉，时而反应迟钝。
+当
                             
                         </div>
                         <div class="publish-info">
@@ -679,7 +643,8 @@
                     <a href="/2023/03/14/thinkingn/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/640f68f7f144a01007681599.jpg" class="responsive-img" alt="每日随笔——追思">
+                            
+                            <img src="/medias/featureimages/11.webp" class="responsive-img" alt="每日随笔——追思">
                             
                             <span class="card-title">每日随笔——追思</span>
                         </div>
@@ -687,7 +652,8 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                想姥爷了。
+                                现在是北京时间1点43分。这是一个很平和的夜晚，如我文中千百次写过的小镇的夜晚一样，她依旧宁静而祥和，温暖的包裹着整个城市。
+因此，一个没有理由的心脏的疼痛就给我带来的更多的苦恼。躺在床上便如同坐在了荨麻上，我不知是什么情绪的来袭，竟已发展
                             
                         </div>
                         <div class="publish-info">
@@ -724,7 +690,8 @@
                     <a href="/2023/03/06/thinkingm/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/65a4c549871b83018a1b7343.jpg" class="responsive-img" alt="每日随笔——人会为擦肩而过感到悲伤吗？">
+                            
+                            <img src="/medias/featureimages/8.webp" class="responsive-img" alt="每日随笔——人会为擦肩而过感到悲伤吗？">
                             
                             <span class="card-title">每日随笔——人会为擦肩而过感到悲伤吗？</span>
                         </div>
@@ -732,7 +699,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一日酒后。
+                                人会对擦肩而过的东西遗憾吗？
+朋友端着酒杯问出了这句话，怔住了我闷头喝酒的心。
+“比如，六年前，那个夜晚，如果你没有在那个群里发言。”
+哦，想起来了。那是我愣头青的最直接写照。
+当时在一个QQ群里，似乎有着几百个人。那个群似乎是小孩子居多，
                             
                         </div>
                         <div class="publish-info">
@@ -769,7 +740,8 @@
                     <a href="/2023/01/19/thinkingl/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/63c81a82be43e0d30e1d19e0.jpg" class="responsive-img" alt="最近的一些想法">
+                            
+                            <img src="/medias/featureimages/8.webp" class="responsive-img" alt="最近的一些想法">
                             
                             <span class="card-title">最近的一些想法</span>
                         </div>
@@ -777,7 +749,9 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                我最近在干什么
+                                今天是大年28。
+今天上传的两篇文章都是我之前在qq空间写下的。很惭愧的是，我没有及时更新我的思考。一方面是因为惰性作怪，另一方面是生活的确有些忙碌。
+我很喜欢过年，因为我的家庭是幸福的。这对于很多人来说是一件可望而不可即的东西。尤其是在这
                             
                         </div>
                         <div class="publish-info">
@@ -811,18 +785,20 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2023/01/18/thinkingk/">
+                    <a href="/2023/01/18/123/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/63c819c8be43e0d30e1bb21f.jpg" class="responsive-img" alt="每日随笔-给莫言先生的回信">
                             
-                            <span class="card-title">每日随笔-给莫言先生的回信</span>
+                            <img src="/medias/featureimages/2.webp" class="responsive-img" alt="应该是暂时不会再更新啦。">
+                            
+                            <span class="card-title">应该是暂时不会再更新啦。</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                这是写自看完b站视频《不被大风吹倒》后的观后感
+                                我好难过。
+
                             
                         </div>
                         <div class="publish-info">
@@ -859,7 +835,8 @@
                     <a href="/2023/01/18/thinkingj/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/63c81867be43e0d30e18ac9c.jpg" class="responsive-img" alt="每日随笔—我为什么讨厌mbti？">
+                            
+                            <img src="/medias/featureimages/23.webp" class="responsive-img" alt="每日随笔—我为什么讨厌mbti？">
                             
                             <span class="card-title">每日随笔—我为什么讨厌mbti？</span>
                         </div>
@@ -867,7 +844,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                之前对于MBTI的一点思考
+                                今天是不太凉爽的春天，而恰巧在三年前的今天，我接触了mbti。这是一个颇有渊源的小故事，那位曾经为我引导进心理学大门，并认真的聆听我组织混乱的语言并给出温和的建议的女孩子为了让我从人生的低谷中找到些许动力，她带我加入了一个mbti的群。那个
                             
                         </div>
                         <div class="publish-info">
@@ -905,19 +882,19 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2023/01/18/123/">
+                    <a href="/2023/01/18/thinkingk/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/2.webp" class="responsive-img" alt="应该是暂时不会再更新啦。">
+                            <img src="/medias/featureimages/4.webp" class="responsive-img" alt="每日随笔-给莫言先生的回信">
                             
-                            <span class="card-title">应该是暂时不会再更新啦。</span>
+                            <span class="card-title">每日随笔-给莫言先生的回信</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                断更
+                                见字如面，展信佳。“一个人可以被生活打败，但不能被生活打倒”。我很喜欢这句话。拜读您的大风已经是很早之前的事了。在紧张的两个半小时的考试时间里，我曾经迅速而囫囵吞枣的阅读了您的《大风》，但依旧给我留下了深刻的印象。这个颇有老人与海色彩的故事
                             
                         </div>
                         <div class="publish-info">
@@ -954,7 +931,8 @@
                     <a href="/2022/12/14/thinkingh/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/65a4c5aa871b83018a1c89e8.jpg" class="responsive-img" alt="每日随笔-关于公祭日。">
+                            
+                            <img src="/medias/featureimages/3.webp" class="responsive-img" alt="每日随笔-关于公祭日。">
                             
                             <span class="card-title">每日随笔-关于公祭日。</span>
                         </div>
@@ -962,7 +940,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                随笔。
+                                每个公祭日，我都会想起15年的自己。如果要说那是在孩子心中埋下了一颗仇恨的种子，未免有些过于残酷。但15年，那个我还在初一，懵懂的年纪，第一次参观了南京大屠杀纪念馆。也是在同一年，我第一次看到了一些极其残酷而又痛苦的事情。原本在一个孩子的心
                             
                         </div>
                         <div class="publish-info">
@@ -996,18 +974,22 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/12/09/thinkingf/">
+                    <a href="/2022/12/09/thinkingg/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/63922463b1fccdcd36a466d0.png" class="responsive-img" alt="每日随笔">
                             
-                            <span class="card-title">每日随笔</span>
+                            <img src="/medias/featureimages/20.webp" class="responsive-img" alt="每日随笔-力量人多而多，思维人多而少">
+                            
+                            <span class="card-title">每日随笔-力量人多而多，思维人多而少</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                随笔。
+                                为什么力量是人多而多，思维是人多而少？
+​    此处我们先解释一下，毕竟这个算是我自创的词。人多而多，从字面意义上来讲就是人越多，这个东西（力量）越多，而实意也是如此（废话），反之亦然。
+​    先从“力量是人多而多”开始：
+​    
                             
                         </div>
                         <div class="publish-info">
@@ -1041,18 +1023,20 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/12/09/thinkingg/">
+                    <a href="/2022/12/09/thinkingf/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://pic.imgdb.cn/item/63922463b1fccdcd36a466d0.png" class="responsive-img" alt="每日随笔-力量人多而多，思维人多而少">
                             
-                            <span class="card-title">每日随笔-力量人多而多，思维人多而少</span>
+                            <img src="/medias/featureimages/3.webp" class="responsive-img" alt="每日随笔">
+                            
+                            <span class="card-title">每日随笔</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一篇有些感触的摘抄
+                                最近有很多东西可写的。明面上来说，有世界杯，有疫情，有最近看的书，有昨天看的电影。就单纯是最近github被标记为诈骗网站这一件事，似乎也足以写个几千字的文章洋洋洒洒攻击一下审核机制。
+似乎每一年都会有这么几个时刻，整个世界都乱套了，信息量
                             
                         </div>
                         <div class="publish-info">
@@ -1168,44 +1152,41 @@
 </div>
 
 <script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-
-    <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2024</span>
+                <span id="year">2019-2026</span>
             
+            <span id="year">2019</span>
             <a href="/about" target="_blank">浮生</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
-                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">35.5k</span>
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">35.5k</span>&nbsp;字
             
             
             
-                
             
             
-                <span id="busuanzi_container_site_pv">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
-                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
             </span>
             
             
-                <span id="busuanzi_container_site_uv">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
-                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
             </span>
             
             <br>
-
-            <!-- 运行天数提醒. -->
             
             <br>
             
@@ -1352,30 +1333,6 @@ $(function () {
 });
 </script>
 
-    <!-- 白天和黑夜主题 -->
-<div class="stars-con">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>  
-</div>
-
-<script>
-    function switchNightMode() {
-        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
-        setTimeout(function () {
-            $('body').hasClass('DarkMode') 
-            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
-            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
-            
-            setTimeout(function () {
-            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
-                $(this).remove()
-            })
-            }, 2e3)
-        })
-    }
-</script>
-
     <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
@@ -1390,22 +1347,6 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
-
-    
-
-    
-
-    <!-- 雪花特效 -->
-    
-
-    <!-- 鼠标星星特效 -->
-    
-
-     
-        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
-        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
-    
 
     <!-- Baidu Analytics -->
 
@@ -1436,8 +1377,7 @@ $(function () {
 
     
 
-    <!--腾讯兔小巢-->
-    
+	
     
 
     

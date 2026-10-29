@@ -13,111 +13,28 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
     <title>银河咖啡馆</title>
     <link rel="icon" type="image/png" href="/favicon.png">
-    
 
-
-    <!-- index cover -->
-    <!-- <link rel="stylesheet preload" type="text/css" href="/css/indexcover.css"> -->
-    <style>
-        .carousel-control {
-            width: 45px;
-            height: 45px;
-            line-height: 55px;
-            border-radius: 45px;
-            background: transparent;
-            cursor: pointer;
-            z-index: 100;
-        }
-        
-        #prev-cover {
-            position: absolute;
-            top: 48%;
-            left: 8px;
-        }
-        
-        #next-cover {
-            position: absolute;
-            top: 48%;
-            right: 8px;;
-        }
-        
-        #prev-cover i {
-            margin-right: 3px;
-        }
-        
-        #next-cover i {
-            margin-left: 3px;
-        }
-        
-        .carousel-control:hover {
-            background-color: rgba(0, 0, 0, .4);
-        }
-        
-        .carousel-control i {
-            color: #fff;
-            font-size: 2.4rem;
-        }
-    </style>
-
-
-
-<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-<link rel="stylesheet" type="text/css" href="/css/matery.css">
-<link rel="stylesheet" type="text/css" href="/css/my.css">
-<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
-
-
-
-
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-    <link rel="stylesheet" href="/css/post.css">
-
-
-
-
-
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/css/loading.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 
-<meta name="generator" content="Hexo 6.3.0"></head>
 
 
 <body>
-    
-  <div id="loading-box">
-    <div class="loading-left-bg"></div>
-    <div class="loading-right-bg"></div>
-    <div class="spinner-box">
-      <div class="configure-border-1">
-        <div class="configure-core"></div>
-      </div>
-      <div class="configure-border-2">
-        <div class="configure-core"></div>
-      </div>
-      <div class="loading-word">加载中...</div>
-    </div>
-  </div>
-  <!-- 页面加载动画 -->
-  <script>
-    $(document).ready(function () {
-      document.body.style.overflow = 'auto';
-      document.getElementById('loading-box').classList.add("loaded")
-    })
-  </script>
-
-
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -213,7 +130,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="" class="waves-effect waves-light">
+    <a href="javascript:;" class="waves-effect waves-light">
 
       
       <i class="fas fa-list" style="zoom: 0.6;"></i>
@@ -250,11 +167,6 @@
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
-  <li>
-    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
-      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
-    </a>
-  </li>
 </ul>
 
 
@@ -271,6 +183,8 @@
             
         </div>
     </div>
+
+    
 
     <ul class="menu-list mobile-menu-list">
         
@@ -462,19 +376,53 @@
 </header>
 
     
+<style>
+    .carousel-control {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        border-radius: 45px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #prev-cover {
+        position: absolute;
+        top: 48%;
+        left: 8px;
+    }
+
+    #next-cover {
+        position: absolute;
+        top: 48%;
+        right: 8px;;
+    }
+
+    #prev-cover i {
+        margin-right: 3px;
+    }
+
+    #next-cover i {
+        margin-left: 3px;
+    }
+
+    .carousel-control:hover {
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control i {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+</style>
+
 
 
 <div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
-        <div id="prev-cover" class="left waves-effect carousel-control">
-            <i class="icon fa fa-angle-left"></i>
-        </div>
-        <div id="next-cover" class="right waves-effect carousel-control">
-            <i class="icon fa fa-angle-right"></i>
-        </div>
-    
 
-    <div class="carousel-item  white-text bg-cover about-cover">
+    <div class="carousel-item red white-text bg-cover about-cover">
         <div class="container">
             <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -488,16 +436,10 @@
             <div class="description center-align">
                 
                 <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "不要温和的走进那个良夜",
-                            
-                                "怒斥吧，怒斥光的消逝。",
-                            
-                        ],
+                        strings: ['怒斥吧，怒斥光的消逝',''],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -513,14 +455,15 @@
 
 
 <script>
-    $('.bg-cover').css('background-image', 'url(https://pic.imgdb.cn/item/636d21af16f2c2beb1c8c8da.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.webp';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
 
 
-
             <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
+                <a href="#articles" class="waves-effect waves-light btn">
                     <i class="fa fa-angle-double-down"></i>开始阅读
                 </a>
 
@@ -566,539 +509,6 @@
     </div>
 
     
-        
-
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/2.webp');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">应该是暂时不会再更新啦。</div>
-                            <div class="description center-align">
-                                
-                                    断更
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/01/18/123/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/65a4c66b871b83018a1eb4a1.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">写在初雪</div>
-                            <div class="description center-align">
-                                
-                                    在北方的第一个初雪。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/12/19/d1/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/65a4c7e7871b83018a2363a2.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">写在归乡</div>
-                            <div class="description center-align">
-                                
-                                    回家了。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2024/01/12/d2/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/63b4ff85be43e0d30e92f8ac.png');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">游戏玩后感——《审判之眼》</div>
-                            <div class="description center-align">
-                                
-                                    这两天玩完了审判之眼
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/01/04/game/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/65366ed4c458853aefcdc298.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">病愈随笔(2)</div>
-                            <div class="description center-align">
-                                
-                                    写在国庆。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/10/23/sick/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/65366ed4c458853aefcdc298.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">病愈随笔(1)</div>
-                            <div class="description center-align">
-                                
-                                    秋思。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/10/23/sick1/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/images/Just.png');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔-关于一道内心的伤口</div>
-                            <div class="description center-align">
-                                
-                                    一个久远的回忆。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/11/15/thinkingb/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/65a4c5f8871b83018a1d64c6.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">聊天记录——战双帕米什中灰鸦的存在意义及其精神象征</div>
-                            <div class="description center-align">
-                                
-                                    和朋友探讨的记录
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/01/07/talking1/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/images/Star.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔-关于在人际关系中的思考</div>
-                            <div class="description center-align">
-                                
-                                    半夜因为一些事情气的有点睡不着
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/11/12/thinkinga/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/images/%E6%A5%9A%E9%97%A8%E7%9A%84%E4%B8%96%E7%95%8C.jfif');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔-楚门的世界与洞穴寓言</div>
-                            <div class="description center-align">
-                                
-                                    关于一些哲学思辨的小思考
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/11/09/thinking/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/637ba95116f2c2beb10301cc.png');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">一份自我介绍</div>
-                            <div class="description center-align">
-                                
-                                    这是一份自我介绍
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/11/18/thinkingc/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/637cf7e816f2c2beb1eece70.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">一段摘抄</div>
-                            <div class="description center-align">
-                                
-                                    看到的一段对我很有感触的话
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/11/23/thinkingd/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/6383969b16f2c2beb17ec095.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">近来有些愁闷</div>
-                            <div class="description center-align">
-                                
-                                    最近有些迷茫
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/11/28/thinkinge/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/63922463b1fccdcd36a466d0.png');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔-力量人多而多，思维人多而少</div>
-                            <div class="description center-align">
-                                
-                                    一篇有些感触的摘抄
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/12/09/thinkingg/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/65a4c5aa871b83018a1c89e8.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔-关于公祭日。</div>
-                            <div class="description center-align">
-                                
-                                    随笔。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/12/14/thinkingh/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/63922463b1fccdcd36a466d0.png');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔</div>
-                            <div class="description center-align">
-                                
-                                    随笔。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/12/09/thinkingf/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/63c81867be43e0d30e18ac9c.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔—我为什么讨厌mbti？</div>
-                            <div class="description center-align">
-                                
-                                    之前对于MBTI的一点思考
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/01/18/thinkingj/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/63c81a82be43e0d30e1d19e0.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">最近的一些想法</div>
-                            <div class="description center-align">
-                                
-                                    我最近在干什么
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/01/19/thinkingl/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/65a4c549871b83018a1b7343.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔——人会为擦肩而过感到悲伤吗？</div>
-                            <div class="description center-align">
-                                
-                                    一日酒后。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/03/06/thinkingm/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/640f68f7f144a01007681599.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔——追思</div>
-                            <div class="description center-align">
-                                
-                                    想姥爷了。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/03/14/thinkingn/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/64f71241661c6c8e54b27eaf.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔——从《海边的曼彻斯特》看存在主义 part1</div>
-                            <div class="description center-align">
-                                
-                                    Part1是影评。
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/09/05/thinkingo/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/63d6b7feface21e9efa394ff.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">流浪地球观后感</div>
-                            <div class="description center-align">
-                                
-                                    看完流浪地球的一点点感触
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/01/29/thinkingz/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://pic.imgdb.cn/item/63c819c8be43e0d30e1bb21f.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">每日随笔-给莫言先生的回信</div>
-                            <div class="description center-align">
-                                
-                                    这是写自看完b站视频《不被大风吹倒》后的观后感
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2023/01/18/thinkingk/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-    
 </div>
 
 <script>
@@ -1133,8 +543,19 @@
 
         let carouselIntervalId;
         
+        // Loop to call the next cover article picture.
+        let autoCarousel = function () {
+            carouselIntervalId = setInterval(function () {
+                coverSlider.carousel('next');
+            }, 5000);
+        };
+        autoCarousel();
+        
 
         function restartPlay() {
+            
+            clearInterval(carouselIntervalId);
+            autoCarousel();
             
         };
 
@@ -1187,41 +608,6 @@
 
 
 
-
-
-<div class="title"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;推荐文章</div>
-
-<div class="row">
-
-    
-    
-    <div class="col s12" >
-        
-             <div class="post-card" style="background-image: url('https://pic.imgdb.cn/item/637ba95116f2c2beb10301cc.png')">
-        
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/%E6%AF%8F%E6%97%A5%E9%9A%8F%E7%AC%94/" class="category">每日随笔</a>
-                        
-                    
-                </div>
-                <a href="/2022/11/18/thinkingc/">
-                    <h3 class="post-title">一份自我介绍</h3>
-                </a>
-                <p class="post-description">这是一份自我介绍</p>
-                <a href="/2022/11/18/thinkingc/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-
-</div>
-
-
                     </div>
                     
                 </div>
@@ -1236,13 +622,61 @@
     <article id="articles" class="container articles">
         <div class="row article-row">
             
-             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2026/10/30/post/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/14.webp" class="responsive-img" alt="我回来了">
+                            
+                            <span class="card-title">我回来了</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                我回来了！！有了全新的软件以后可以继续更新了www
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-10-30
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%97%A5%E5%B8%B8/" class="post-category">
+                                    日常
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%97%A5%E5%B8%B8/">
+                            <span class="chip bg-color">日常</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2024/01/12/d2/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/65a4c7e7871b83018a2363a2.jpg" class="responsive-img" alt="写在归乡">
+                            
+                            <img src="/medias/featureimages/14.webp" class="responsive-img" alt="写在归乡">
                             
                             <span class="card-title">写在归乡</span>
                         </div>
@@ -1251,7 +685,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                回家了。
+                                走时已是傍晚。渐变的散漫着的晚霞挂上了这片澄净的天空。落日溶了金子般垂垂然落了下去，四溢开来无边的冬色。余霞散成绮丝，虽然没有澄江安静的绸缎作为陪衬，但看不见的不远处有潮起潮落的大海温和的融入进夕阳。该回家了。萧瑟的树枝轻轻的摇晃着，凌厉的
                             
                         </div>
                         <div class="publish-info">
@@ -1282,15 +716,14 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/12/19/d1/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/65a4c66b871b83018a1eb4a1.jpg" class="responsive-img" alt="写在初雪">
+                            
+                            <img src="/medias/featureimages/4.webp" class="responsive-img" alt="写在初雪">
                             
                             <span class="card-title">写在初雪</span>
                         </div>
@@ -1299,7 +732,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                在北方的第一个初雪。
+                                北国的雪来的比想象中还要突然些，伴随着依旧凛冽的寒风，在无人问津的夜晚悄然降临了下来。对于这个少女般的小城，我大抵是受得够够的了，也自然明白她的喜怒无常。只是无论她怎么努力，寒风依旧吹不进春意盎然的屋子里，只得悻悻然在屋外落着一片片的冰晶。
                             
                         </div>
                         <div class="publish-info">
@@ -1330,15 +763,14 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/10/23/sick/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/65366ed4c458853aefcdc298.jpg" class="responsive-img" alt="病愈随笔(2)">
+                            
+                            <img src="/medias/featureimages/15.webp" class="responsive-img" alt="病愈随笔(2)">
                             
                             <span class="card-title">病愈随笔(2)</span>
                         </div>
@@ -1347,7 +779,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                写在国庆。
+                                印象里曾经看过一篇文章。文里写，高三之后，故乡再无春秋，于是秋天的桂花香缠着思绪乘风破浪去他的梦里。看到这篇文的时候很有感触。原因不过是一样的家乡，一样的桂花，一样的闯入梦中。没有高楼大厦和来来往往的旅客，只剩下自己感知中的血液连接着这片大
                             
                         </div>
                         <div class="publish-info">
@@ -1378,15 +810,14 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/10/23/sick1/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/65366ed4c458853aefcdc298.jpg" class="responsive-img" alt="病愈随笔(1)">
+                            
+                            <img src="/medias/featureimages/8.webp" class="responsive-img" alt="病愈随笔(1)">
                             
                             <span class="card-title">病愈随笔(1)</span>
                         </div>
@@ -1395,7 +826,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                秋思。
+                                印象里那是一个极远的秋天。远到对于那时候的我来说，从我家到姥姥家的2千米是犹如长江天险般的漫漫长征。活在印象里的故乡还没有象征着城市第一枚火苗的高楼，家乡的小平房旁只有无穷的原野和昏沉的暮色。不必从高处，在三楼的阁楼上就可以眺望这个世界。没
                             
                         </div>
                         <div class="publish-info">
@@ -1426,15 +857,14 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/09/05/thinkingo/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/64f71241661c6c8e54b27eaf.jpg" class="responsive-img" alt="每日随笔——从《海边的曼彻斯特》看存在主义 part1">
+                            
+                            <img src="/medias/featureimages/16.webp" class="responsive-img" alt="每日随笔——从《海边的曼彻斯特》看存在主义 part1">
                             
                             <span class="card-title">每日随笔——从《海边的曼彻斯特》看存在主义 part1</span>
                         </div>
@@ -1443,7 +873,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Part1是影评。
+                                “在事情发生的那一刻，他已经死了。”
+影片开头，是灰色的夜晚。
+一个男人在一个大楼里干着最底端的工作，他的身上仿佛笼罩了一层雾，把他清晰的与世界本身的颜色割裂开——只剩下纯粹的灰色。
+他不计报酬，无所谓前景，时而心不在焉，时而反应迟钝。
+当
                             
                         </div>
                         <div class="publish-info">
@@ -1474,15 +908,14 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/03/14/thinkingn/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/640f68f7f144a01007681599.jpg" class="responsive-img" alt="每日随笔——追思">
+                            
+                            <img src="/medias/featureimages/11.webp" class="responsive-img" alt="每日随笔——追思">
                             
                             <span class="card-title">每日随笔——追思</span>
                         </div>
@@ -1491,7 +924,8 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                想姥爷了。
+                                现在是北京时间1点43分。这是一个很平和的夜晚，如我文中千百次写过的小镇的夜晚一样，她依旧宁静而祥和，温暖的包裹着整个城市。
+因此，一个没有理由的心脏的疼痛就给我带来的更多的苦恼。躺在床上便如同坐在了荨麻上，我不知是什么情绪的来袭，竟已发展
                             
                         </div>
                         <div class="publish-info">
@@ -1522,15 +956,14 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/03/06/thinkingm/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/65a4c549871b83018a1b7343.jpg" class="responsive-img" alt="每日随笔——人会为擦肩而过感到悲伤吗？">
+                            
+                            <img src="/medias/featureimages/8.webp" class="responsive-img" alt="每日随笔——人会为擦肩而过感到悲伤吗？">
                             
                             <span class="card-title">每日随笔——人会为擦肩而过感到悲伤吗？</span>
                         </div>
@@ -1539,7 +972,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一日酒后。
+                                人会对擦肩而过的东西遗憾吗？
+朋友端着酒杯问出了这句话，怔住了我闷头喝酒的心。
+“比如，六年前，那个夜晚，如果你没有在那个群里发言。”
+哦，想起来了。那是我愣头青的最直接写照。
+当时在一个QQ群里，似乎有着几百个人。那个群似乎是小孩子居多，
                             
                         </div>
                         <div class="publish-info">
@@ -1570,15 +1007,14 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/01/29/thinkingz/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/63d6b7feface21e9efa394ff.jpg" class="responsive-img" alt="流浪地球观后感">
+                            
+                            <img src="/medias/featureimages/23.webp" class="responsive-img" alt="流浪地球观后感">
                             
                             <span class="card-title">流浪地球观后感</span>
                         </div>
@@ -1587,7 +1023,8 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                看完流浪地球的一点点感触
+                                
+**“我们成功地（从外太空）拍到这张照片，细心再看，你会看见一个毫不出奇的小点。再看看那个光点，它就在这里。那是我们的家园，我们的一切。你所爱的每一个人，你认识的每一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生。
                             
                         </div>
                         <div class="publish-info">
@@ -1618,15 +1055,14 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/01/19/thinkingl/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/63c81a82be43e0d30e1d19e0.jpg" class="responsive-img" alt="最近的一些想法">
+                            
+                            <img src="/medias/featureimages/8.webp" class="responsive-img" alt="最近的一些想法">
                             
                             <span class="card-title">最近的一些想法</span>
                         </div>
@@ -1635,7 +1071,9 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                我最近在干什么
+                                今天是大年28。
+今天上传的两篇文章都是我之前在qq空间写下的。很惭愧的是，我没有及时更新我的思考。一方面是因为惰性作怪，另一方面是生活的确有些忙碌。
+我很喜欢过年，因为我的家庭是幸福的。这对于很多人来说是一件可望而不可即的东西。尤其是在这
                             
                         </div>
                         <div class="publish-info">
@@ -1666,9 +1104,7 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/01/18/123/">
@@ -1684,7 +1120,8 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                断更
+                                我好难过。
+
                             
                         </div>
                         <div class="publish-info">
@@ -1715,15 +1152,14 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/2023/01/18/thinkingj/">
                         <div class="card-image">
                             
-                            <img src="https://pic.imgdb.cn/item/63c81867be43e0d30e18ac9c.jpg" class="responsive-img" alt="每日随笔—我为什么讨厌mbti？">
+                            
+                            <img src="/medias/featureimages/23.webp" class="responsive-img" alt="每日随笔—我为什么讨厌mbti？">
                             
                             <span class="card-title">每日随笔—我为什么讨厌mbti？</span>
                         </div>
@@ -1732,7 +1168,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                之前对于MBTI的一点思考
+                                今天是不太凉爽的春天，而恰巧在三年前的今天，我接触了mbti。这是一个颇有渊源的小故事，那位曾经为我引导进心理学大门，并认真的聆听我组织混乱的语言并给出温和的建议的女孩子为了让我从人生的低谷中找到些许动力，她带我加入了一个mbti的群。那个
                             
                         </div>
                         <div class="publish-info">
@@ -1767,55 +1203,6 @@
                     
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2023/01/18/thinkingk/">
-                        <div class="card-image">
-                            
-                            <img src="https://pic.imgdb.cn/item/63c819c8be43e0d30e1bb21f.jpg" class="responsive-img" alt="每日随笔-给莫言先生的回信">
-                            
-                            <span class="card-title">每日随笔-给莫言先生的回信</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这是写自看完b站视频《不被大风吹倒》后的观后感
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-18
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%AF%8F%E6%97%A5%E9%9A%8F%E7%AC%94/" class="post-category">
-                                    每日随笔
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Thinking/">
-                            <span class="chip bg-color">Thinking</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
         </div>
     </article>
@@ -1902,44 +1289,41 @@
 </div>
 
 <script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-
-    <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2024</span>
+                <span id="year">2019-2026</span>
             
+            <span id="year">2019</span>
             <a href="/about" target="_blank">浮生</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
-                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">35.5k</span>
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">35.5k</span>&nbsp;字
             
             
             
-                
             
             
-                <span id="busuanzi_container_site_pv">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
-                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
             </span>
             
             
-                <span id="busuanzi_container_site_uv">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
-                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
             </span>
             
             <br>
-
-            <!-- 运行天数提醒. -->
             
             <br>
             
@@ -2086,30 +1470,6 @@ $(function () {
 });
 </script>
 
-    <!-- 白天和黑夜主题 -->
-<div class="stars-con">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>  
-</div>
-
-<script>
-    function switchNightMode() {
-        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
-        setTimeout(function () {
-            $('body').hasClass('DarkMode') 
-            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
-            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
-            
-            setTimeout(function () {
-            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
-                $(this).remove()
-            })
-            }, 2e3)
-        })
-    }
-</script>
-
     <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
@@ -2124,22 +1484,6 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
-
-    
-
-    
-
-    <!-- 雪花特效 -->
-    
-
-    <!-- 鼠标星星特效 -->
-    
-
-     
-        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
-        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
-    
 
     <!-- Baidu Analytics -->
 
@@ -2170,8 +1514,7 @@ $(function () {
 
     
 
-    <!--腾讯兔小巢-->
-    
+	
     
 
     

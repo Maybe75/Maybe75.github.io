@@ -1,5 +1,4 @@
 /* Here is your custom css styles. */
-Css
 @font-face{
     font-family: 'kai';
     src: url('../font/kai.ttf');
@@ -7,4 +6,61 @@ Css
 
 body{
     font-family: 'kai';
+}
+
+/* ─────────── 正文图片 ───────────
+   写作室里拖进来/粘贴的图片会落到 source/images/，正文里写 ![](/images/…)，
+   这里统一保证它们在页面上不溢出、不当“图片裂开”看。 */
+#articleContent img,
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.3);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    cursor: zoom-in;
+}
+
+#articleContent img:hover,
+.article-content img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.42);
+}
+
+/* 图片放在引用、列表里时不要撑破容器 */
+#articleContent blockquote img,
+#articleContent li img {
+    margin: 1em auto;
+}
+
+/* 竖图别太高，避免一屏全被占满 */
+#articleContent img[style*="height"],
+.article-content img[style*="height"] {
+    max-height: 78vh;
+    object-fit: contain;
+}
+
+/* 深色模式下降低阴影浓度，避免糊成一团 */
+.dark #articleContent img,
+.dark .article-content img {
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.62);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* 单独一行的图片说明：紧跟在图片后面的斜体段落，居中且收窄 */
+#articleContent img + p > em:only-child,
+.article-content img + p > em:only-child {
+    display: block;
+    text-align: center;
+    font-size: 0.86em;
+    color: #8b96a8;
+    margin-top: -0.6em;
+}
+
+/* 首页卡片里的头图也统一切一下，避免比例奇怪 */
+.article-card .card-image img,
+.card .card-image img {
+    object-fit: cover;
 }
