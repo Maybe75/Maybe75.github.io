@@ -64,3 +64,49 @@ body{
 .card .card-image img {
     object-fit: cover;
 }
+
+/* ─────────── 正文可读性 ───────────
+   全站字体是 kai.ttf（楷体），笔画极细，浅底长段落会“发灰”。
+   正文与卡片摘要改用宋体：横细竖粗、笔画有体积，读起来清楚；
+   标题、导航、页脚仍保留楷体，留住手写的手稿气。 */
+#articleContent,
+#articleContent p,
+#articleContent li,
+#articleContent blockquote p,
+#articleContent table,
+.article-content .summary {
+    font-family: 'Songti SC', 'SimSun', '\5b8b\4f53', 'Microsoft YaHei', serif;
+}
+
+/* 正文段落：约 18px / 行高 32px，比原来的 16.8px / 29.6px 松一档 */
+#articleContent p {
+    font-size: 1.12rem;
+    line-height: 2rem;
+    letter-spacing: 0.2px;
+    margin: 2px 2px 14px;
+}
+
+#articleContent ul li,
+#articleContent ol li {
+    font-size: 1.1rem;
+    line-height: 1.95rem;
+    letter-spacing: 0.2px;
+}
+
+#articleContent blockquote p {
+    font-size: 1.08rem;
+    line-height: 1.95rem;
+}
+
+/* 手机上别太大，略收一档 */
+@media only screen and (max-width: 601px) {
+    #articleContent p {
+        font-size: 1.06rem;
+        line-height: 1.92rem;
+    }
+    #articleContent ul li,
+    #articleContent ol li {
+        font-size: 1.04rem;
+        line-height: 1.88rem;
+    }
+}
